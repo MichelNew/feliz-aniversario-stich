@@ -1,0 +1,74 @@
+/* style.css */
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Puedes usar una fuente más temática de Stitch si encuentras */
+    background-color: #e0f2f7; /* Azul claro, como el océano de Hawái */
+    background-image: url('images/stitch_background.png'); /* Busca una imagen de Stitch para el fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente para la carta */
+    border-radius: 15px;
+    padding: 30px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    text-align: center;
+    border: 3px solid #ff69b4; /* Borde rosa vibrante */
+    position: relative;
+}
+
+.header {
+    color: #4682b4; /* Azul acero para el título */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.header::after {
+    content: url('images/lilo_stitch.gif'); /* Agrega un GIF de Lilo y Stitch aquí */
+    display: block;
+    margin-top: 10px;
+    height: 80px; /* Ajusta el tamaño */
+    width: auto;
+    animation: bounce 2s infinite; /* Pequeña animación para el GIF */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.signature {
+    margin-top: 30px;
+    font-weight: bold;
+    font-style: italic;
+    color: #ff69b4; /* Rosa vibrante para la firma */
+    font-size: 1.2em;
+}
+
+.heart {
+    color: #ff69b4; /* Corazones rosados */
+}
+
+/* Puedes añadir más estilos para animaciones, efectos al pasar el ratón, etc. */

@@ -1,0 +1,45 @@
+# generate_page.py
+
+def generate_html_page():
+    # Tu carta
+    carta = """
+    <p>💙 Feliz Primer Mes 💙</p>
+    <p>Mi amor hermosa:</p>
+    <p>Hoy se cumple un mes desde que decidimos comenzar esta historia tan bonita juntos, y aunque ha pasado poco tiempo, para mi ha sido suficiente para darme cuenta de lo mucho que significas para mi. 🥺❤️</p>
+    <p>Aun recuerdo ese dia en el cine, cuando fuimos a ver la peli de Stich… tu tan linda como siempre, y yo con los nervios al maximo, con ese peluchito escondido en la mochila y las flores de papel que hice con toda mi ilusion, esperando que ese momento fuera especial para ti… Y lo fue, porque desde ese dia, todo ha sido mejor. 🥰❤️</p>
+    <p>Tu y yo tenemos algo unico… algo que no necesita explicarse, porque se siente, y lo siento cada vez que me hablas bonito, cada vez que me mandas un mensaje coqueto, cada vez que me abrazas fuerte y me miras como si el mundo se detuviera ahi.</p>
+    <p>Este primer mes contigo ha sido como una aventura: increible, bonita, divertida, llena de momentos que me hacen sonreir solo con recordarlos… y eso que apenas comenzamos. 🥹💗</p>
+    <p>Gracias por tu ternura, por tu forma de quererme, por tus besos que me dejan sin aire y por hacerme sentir tan especial, prometo seguir cuidando esto que tenemos, seguir sorprendiendote, y darte cada dia mas razones para seguir caminando juntos.</p>
+    <p>Te amo mucho, mi niña linda… y si ya soy feliz contigo en este primer mes, no me imagino todo lo que nos espera.</p>
+    <p>Feliz primer mes, mi amor.</p>
+    <p class="signature">Tu novio que te piensa más de lo que crees. ❤️</p>
+    <p class="signature">Con todo mi corazón,</p>
+    <p class="signature">Tu Michel´s 💗</p>
+    """
+
+    html_content = f"""
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Primer Mes, Mi Amor! 💙</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/stitch_icon.png" type="image/png"> </head>
+<body>
+    <div class="container">
+        <h1 class="header">¡Feliz Primer Mes, Mi Amor!</h1>
+        <img src="images/stich.jpg" alt="Stitch de Aniversario" style="width: 250px; display: block; margin: 20px auto;">
+        {carta}
+    </div>
+</body>
+</html>
+    """
+
+    with open("index.html", "w", encoding="utf-8") as file:
+        file.write(html_content)
+
+    print("¡Página web generada exitosamente en index.html!")
+
+if __name__ == "__main__":
+    generate_html_page()
